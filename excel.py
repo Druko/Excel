@@ -231,11 +231,11 @@ class Excel(object):
             if rem == 0:
                 char[i] = 'Z'
                 i += 1
-                n = (n/26)-1
+                n = int(n/26)-1
             else:
                 char[i] = chr((rem-1) + ord('A'))
                 i += 1
-                n = n/26
+                n = int(n/26)
         char[i] = '\0'
  
         # Reverse the string and print result
